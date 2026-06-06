@@ -1,3 +1,15 @@
+---
+title: Agri Bot
+emoji: 🌿
+colorFrom: green
+colorTo: blue
+sdk: gradio
+sdk_version: 5.0.0
+app_file: app.py
+pinned: false
+---
+
+
 # Weed Management Assistant
 
 A RAG-based chatbot that answers questions about weeds using information from a provided PDF guide.
