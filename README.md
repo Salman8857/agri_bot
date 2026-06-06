@@ -10,6 +10,11 @@ app_file: app.py
 pinned: false
 ---
 
+## Live Demo
+
+Try the app here:
+
+https://salmanfaras-agri-bot.hf.space
 
 # Weed Management Assistant
 
