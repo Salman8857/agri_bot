@@ -122,12 +122,15 @@ def handle_submit(message, history):
     if history is None:
         history = []
 
-    rag_history = history.copy()
+    rag_history = []
+
+    for user_msg, bot_msg in history:
+        rag_history.append({"role": "user", "content": user_msg})
+        rag_history.append({"role": "assistant", "content": bot_msg})
 
     answer = ask_question(message, rag_history)
 
-    history.append({"role": "user", "content": message})
-    history.append({"role": "assistant", "content": answer})
+    history.append((message, answer))
 
     return "", history
 
