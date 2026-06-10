@@ -177,4 +177,9 @@ with gr.Blocks(title="Weed Management Assistant") as demo:
     for btn, state in zip(example_btns, example_states):
         btn.click(handle_submit, [state, chatbot], [msg, chatbot])
 
-demo.launch(theme=gr.themes.Soft(), css=CSS)
+demo.launch(
+    theme=gr.themes.Soft(),
+    css=CSS,
+    server_name="0.0.0.0",
+    server_port=7860
+)
