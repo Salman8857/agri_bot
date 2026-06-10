@@ -1,5 +1,6 @@
-gradio==5.0.0
-huggingface_hub==0.25.2
+fastapi>=0.115.0
+uvicorn>=0.34.0
+gradio>=6.16.0
 langchain
 langchain-openai
 langchain-community
